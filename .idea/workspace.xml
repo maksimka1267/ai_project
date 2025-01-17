@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="873d1f5a-c286-4b3d-81ce-22a780faa704" name="Changes" comment="выучил дополнительные методы по работе с видео и фото, отрисовка контуров и построение нового изображения по этим контурам">
+    <list default="true" id="873d1f5a-c286-4b3d-81ce-22a780faa704" name="Changes" comment="работа с цветовыми гаммами">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -16,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="leason3" />
+        <entry key="$PROJECT_DIR$" value="leason4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,7 +47,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "leason4"
+    "git-widget-placeholder": "leason5"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -95,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737067990717</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="работа с цветовыми гаммами">
+      <option name="closed" value="true" />
+      <created>1737115723907</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737115723907</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +121,7 @@
     <MESSAGE value="work with photo and video" />
     <MESSAGE value="работа с отрисовкой квадратов, линий, круга и текста" />
     <MESSAGE value="выучил дополнительные методы по работе с видео и фото, отрисовка контуров и построение нового изображения по этим контурам" />
-    <option name="LAST_COMMIT_MESSAGE" value="выучил дополнительные методы по работе с видео и фото, отрисовка контуров и построение нового изображения по этим контурам" />
+    <MESSAGE value="работа с цветовыми гаммами" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с цветовыми гаммами" />
   </component>
 </project>
