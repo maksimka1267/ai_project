@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="873d1f5a-c286-4b3d-81ce-22a780faa704" name="Changes" comment="побитовые операции и работа с масками">
-      <change afterPath="$PROJECT_DIR$/faces.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/people_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/people_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/people_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/people_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/people_5.png" afterDir="false" />
+    <list default="true" id="873d1f5a-c286-4b3d-81ce-22a780faa704" name="Changes" comment="подключил обучение для поиска лиц">
+      <change afterPath="$PROJECT_DIR$/image/number_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/number_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/number_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/number_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/number_5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/people_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/people_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/people_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/people_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/people_5.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="leason5" />
+        <entry key="$PROJECT_DIR$" value="leason6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,7 +47,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2rfGw2ROmMmokkvizOSv2ANKMKw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,7 +59,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "leason6"
+    "git-widget-placeholder": "leason7"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -117,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737116842048</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="подключил обучение для поиска лиц">
+      <option name="closed" value="true" />
+      <created>1737146658894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737146658894</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +151,7 @@
     <MESSAGE value="выучил дополнительные методы по работе с видео и фото, отрисовка контуров и построение нового изображения по этим контурам" />
     <MESSAGE value="работа с цветовыми гаммами" />
     <MESSAGE value="побитовые операции и работа с масками" />
-    <option name="LAST_COMMIT_MESSAGE" value="побитовые операции и работа с масками" />
+    <MESSAGE value="подключил обучение для поиска лиц" />
+    <option name="LAST_COMMIT_MESSAGE" value="подключил обучение для поиска лиц" />
   </component>
 </project>
