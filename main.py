@@ -1,16 +1,18 @@
 import cv2
 import numpy as np
 
-photo = cv2.imread('image/img.png')
-img = np.zeros(photo.shape[:2], dtype='uint8')
+img = cv2.imread('image/people_5.png')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#натренируем нашу модель
+faces = cv2.CascadeClassifier('faces.xml')
+#получим координаты лиц
+#scaleFactor=2 значит что то что мы ищем может быть в 2 раза больше чем в тренировке
+#minNeighbors=3 насколько много может быть найденых обьектов друг рядом с другом
+results = faces.detectMultiScale(gray, scaleFactor=1.045, minNeighbors=5)
 
-circle = cv2.circle(img.copy(),(200, 300), 120, 255, -1)
-square = cv2.rectangle(img.copy(), (0, 300), (50,550), 255, -1)
+for (x, y, w, h) in results:
+    square = cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), thickness=2)
 
-img = cv2.bitwise_and(photo, photo, mask =square) #выводит только общие части
-# img = cv2.bitwise_or(circle, square) #выводит полное обьединение
-# img = cv2.bitwise_xor(circle, square) #выводит все, кроме общих частей
-# img = cv2.bitwise_not(square) #инверсия
+cv2.imshow('Result', img)
 
-cv2.imshow('result', img)
 cv2.waitKey(0)
