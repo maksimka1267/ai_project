@@ -40,36 +40,51 @@ import numpy as np
 #     cv2.imshow('result', img)
 #     if cv2.waitKey(1) & 0xFF == ord('q'):
 #         break
-img =cv2.imread('image/img.png')
-new_img = np.zeros(img.shape, dtype='uint8')
-#перевернуть
-# img = cv2.flip(img, -1)
-# вращение картинки
-def rotate(img_param, angle):
-        height, width = img_param.shape[:2]
-        point = (width // 2, height // 2)
+# img =cv2.imread('image/img.png')
+# new_img = np.zeros(img.shape, dtype='uint8')
+# #перевернуть
+# # img = cv2.flip(img, -1)
+# # вращение картинки
+# def rotate(img_param, angle):
+#         height, width = img_param.shape[:2]
+#         point = (width // 2, height // 2)
+#
+#         mat = cv2.getRotationMatrix2D(point, angle, 1)
+#         return cv2.warpAffine(img, mat, (height, width))
+#
+# # img = rotate(img, -90)
+# # отступ картинки
+# def transform(img_param, x, y):
+#     mat = np.float32([[1, 0, x], [0, 1, y]])
+#     return cv2.warpAffine(img, mat, (img_param.shape[1], img_param.shape[0]), 1)
+#
+# # img = transform(img, 30, 200)
+#
+# img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# img = cv2.GaussianBlur(img, (5, 5), 0)
+#
+#
+# img = cv2.Canny(img, 100, 100)
+# #контуры изображения
+# con, hir = cv2.findContours(img, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
+# #отрисовка по контурам
+# cv2.drawContours(new_img, con, -1, (233, 111, 148), 1)
+#
+# cv2.imshow('result',new_img)
+#
+# cv2.waitKey(0)
 
-        mat = cv2.getRotationMatrix2D(point, angle, 1)
-        return cv2.warpAffine(img, mat, (height, width))
+img = cv2.imread('image/img.png')
 
-# img = rotate(img, -90)
-# отступ картинки
-def transform(img_param, x, y):
-    mat = np.float32([[1, 0, x], [0, 1, y]])
-    return cv2.warpAffine(img, mat, (img_param.shape[1], img_param.shape[0]), 1)
+img =cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
 
-# img = transform(img, 30, 200)
+img =cv2.cvtColor(img, cv2.COLOR_LAB2BGR)
 
-img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-img = cv2.GaussianBlur(img, (5, 5), 0)
+img =cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
+r, g, b = cv2.split(img)
 
-img = cv2.Canny(img, 100, 100)
-#контуры изображения
-con, hir = cv2.findContours(img, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
-#отрисовка по контурам
-cv2.drawContours(new_img, con, -1, (233, 111, 148), 1)
+img = cv2.merge([b,g,r])
 
-cv2.imshow('result',new_img)
-
+cv2.imshow('result', img)
 cv2.waitKey(0)
